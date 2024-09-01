@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Surprise</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }
+        .container { text-align: center; }
+        .letter { background: #fff; padding: 20px; border-radius: 8px; cursor: pointer; }
+        .surprise { display: none; margin-top: 20px; }
+        .surprise.visible { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="letter" class="letter">Click here to open your surprise!</div>
+        <div id="surprise" class="surprise">
+            <p>somewhere between the softest<br>
+            of your breaths and <br>
+            the moon that leans <br>
+            to listen (i have <br>
+            discovered) a million tiny <br>
+            reasons why <br>
+            i love you<br>
+            <br>
+            (i love you more than words have colors<br>
+            more than mornings have newness <br>
+            more than sunsets feel like honey <br>
+            or the oceans have secrets <br>
+            that whisper only to you)<br>
+            <br>
+            and when you laugh—oh! <br>
+            the world tilts a little closer <br>
+            to perfection<br>
+            <br>
+            if i were a tree, you’d be the earth <br>
+            i’d root myself so deeply in <br>
+            your gentle warmth <br>
+            your every smile is a sun <br>
+            that makes me grow taller into <br>
+            whoever i am meant to be<br>
+            <br>
+            (i would ask the stars to wait a lifetime <br>
+            just to see your face one more time)<br>
+            <br>
+            and though i may not ask <br>
+            the question straight, love <br>
+            in all the silences <br>
+            between our words, know this:<br>
+            there is a forever <br>
+            that waits <br>
+            in every heartbeat<br>
+            and in every heartbeat <br>
+            is a whisper <br>
+            (yours alone)<br>
+            <br>
+            if the moon ever said “marry me,” <br>
+            i think i’d say yes <br>
+            <br>
+            because you are my moon—<br>
+            the loveliest i have ever known<br>
+            </p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('letter').onclick = function() {
+            this.style.display = 'none';
+            document.getElementById('surprise').classList.add('visible');
+        }
+    </script>
+</body>
+</html>
